@@ -32,12 +32,19 @@
     html, body { height: 100%; margin: 0; }
 
     body {
-        background: var(--bg);
-        color: #fff;
-        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
-        display: flex;
-        flex-direction: column; /* Ensures footer stays at bottom */
-    }
+    background-color: var(--bg); 
+    background-image: url("https://s3.us-east-2.amazonaws.com/assets.calleverde.com/images/background-calle-verde.jpg");
+    background-size: cover;          
+    background-attachment: fixed;    
+    background-position: center;     
+    background-repeat: no-repeat;    
+
+    color: #fff;
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;               
+}
 
     .page {
         flex: 1 0 auto; /* Allow the page to grow to fill space */
@@ -194,7 +201,3 @@
 </footer>
 </body>
 </html>
-
-
-
-

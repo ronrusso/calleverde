@@ -141,9 +141,18 @@
         letter-spacing: 1px;
     }
 
-    .footer a {
-        color: #fff;
-        text-decoration: underline;
+    .footer-link {
+    display: inline-block;
+    transition: transform 0.2s ease, font-weight 0.2s ease;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    font-weight: bold;
+    transform: scale(1.05); /* Increases size by exactly 5% */
+    color: #FFDB00; /* Optional: matching your button hover color */
+}
     }
 
     @media (max-width: 420px) {
@@ -174,7 +183,9 @@
 
 <footer class="footer">
     <div class="line1">MADE WITH ♥ IN PALM BEACH</div>
-    <div class="line2"><i>2026 © <a href="https://www.calleverde.com" target="_blank" rel="noopener noreferrer">Calle Verde, Inc.</a> All Rights Reserved.</i></div>
+    <div class="line2">
+    <i>2026 © <a href="https://www.calleverde.com" class="footer-link">Calle Verde, Inc.</a> All Rights Reserved.</i>
+</div>
 </footer>
 
 </body>

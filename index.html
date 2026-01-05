@@ -124,35 +124,38 @@
         filter: brightness(0.96);
     }
 
-    .footer {
-        flex-shrink: 0;
-        width: 100%;
-        background: #000;
-        color: #fff;
-        padding: 22px 12px;
-        text-align: center;
-        font-size: 12px;
-        -height: 1.5;
-    }
+/* Footer CSS */
 
-    .footer .line1 {
-        margin-bottom: 6px;
-        letter-spacing: 1px;
-    }
+ .footer {
+    flex-shrink: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 24px 12px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-    .footer-link {
-    display: inline-block;
-    transition: transform 0.2s ease, font-weight 0.2s ease;
+/* This one rule formats all three lines at once */
+.footer-line {
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* This rule makes ALL links inside the footer white and adds the hover effect */
+.footer a {
     color: #fff;
     text-decoration: underline;
+    display: inline-block; /* Allows the transform/scale to work */
+    transition: transform 0.2s ease, font-weight 0.2s ease;
 }
 
-.footer-link:hover {
+.footer a:hover {
+    transform: scale(1.05);
     font-weight: bold;
-    transform: scale(1.05); /* Increases size by exactly 5% */
-    color: #FFDB00; /* Optional: matching your button hover color */
+    color: #FFDB00; /* Optional: adds your brand yellow on hover */
 }
-    }
 
     @media (max-width: 420px) {
         .mission { font-size: 16px; }
@@ -184,14 +187,15 @@
 </main>
 
 <footer class="footer">
-    <div class="line1">MADE WITH ♥ IN PALM BEACH</div>
-    <div class="line2"><i>2026 © Calle Verde, Inc. All Rights Reserved.</i></div>
-	<p class="line3">Calle Verde is part of <a href="https://www.CocoanutRow.com" target="_blank" rel="noopener noreferrer">CocoanutRow.com</a></p>
+    <div class="footer-line">MADE WITH ♥ IN PALM BEACH</div>
+    
+    <div class="footer-line">
+        <i>2026 © <a href="https://calleverde.com">Calle Verde, Inc.</a> All Rights Reserved.</i>
+    </div>
+    
+    <div class="footer-line">
+        Calle Verde is part of <a href="https://www.CocoanutRow.com" target="_blank" rel="noopener noreferrer">CocoanutRow.com</a>
+    </div>
 </footer>
-
 </body>
-
 </html>
-
-
-
